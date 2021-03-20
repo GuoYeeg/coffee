@@ -1,0 +1,29 @@
+<!--pages/home/home.wxml-->
+
+<my-banner bannerArr="{{bannerArr}}"></my-banner>
+
+<view class="title">
+  <view class="line"></view>
+  <view class="words">咖啡的故事</view>
+</view>
+
+<scroll-view class="scroll-view_H" scroll-x="true" >
+  <view  wx:for="{{xArr}}" wx:key="*this"  class="scroll-view-item_H ">
+    <image src="{{item.src}}" mode="widthFix"></image>
+    <view>{{item.text}}</view>
+  </view>
+</scroll-view>
+
+<view class="title">
+  <view class="line"></view>
+  <view class="words">新品展示</view>
+</view>
+
+<view class="new_list">
+  <view class="new_list_li" wx:for="{{showArr}}" wx:key="*this">
+    <image  src="{{item.imgSrc}}"  mode="widthFix"></image>
+    <view class="new_list_li_desc">{{item.imgTxt}}</view>
+  </view>
+</view>
+
+

@@ -1,0 +1,83 @@
+/* pages/home/home.wxss */
+.swiper image{
+  width: 100vw;
+  height: calc(100vw*(250/375));
+
+}
+swiper{
+  height: calc(100vw*(250/375));
+  /* 给图片加上mode widthFix 保证其等比例缩放 */
+}
+.title{
+  width: 100vw;
+  height: 100rpx;
+  position: relative;
+  background: #fff;
+}
+.line{
+  height: 4rpx;
+  width: 33%;
+  background: #ccc;
+  position: absolute;
+  top: 0; bottom: 0; right: 0; left: 0;
+  margin: auto;
+}
+.words{
+  width: 25%;
+  position: absolute;
+  background: #fff;
+  top: 0; bottom: 0; right: 0; left: 0;
+  margin: auto;
+  height: 100rpx;
+  line-height:100rpx;
+  text-align:center;
+}
+
+.scroll-view_H{
+  width: 100vw;
+  white-space: nowrap;
+  padding:6rpx 0;
+}
+.scroll-view-item_H{
+  display: inline-block;
+  width: 40%;
+  /* height: 300rpx; */
+  text-align: center;
+  margin: 2rpx 8rpx;
+  border-radius: 6rpx;
+  box-shadow: 0  0 9rpx #ccc;
+  color:#ccc;
+}
+.scroll-view-item_H image{
+  width: 100%;
+}
+/* new list */
+.new_list{
+  display: flex;
+  /* width: 100%; */
+  padding: 0 4%;
+  flex-wrap: wrap;
+  justify-content: space-between;
+}
+.new_list_li{
+  width: 48%;
+  background: #fff;
+  box-shadow: 0 0 9rpx #ccc;
+  margin-top: 20rpx;
+  border-radius: 6rpx;
+  overflow: hidden;
+}
+.new_list_li image{
+  width: 100%;
+  display: block;
+}
+.new_list_li_desc{
+  height: 50rpx;
+  line-height: 50rpx;
+  text-align: center;
+}
+::-webkit-scrollbar{
+  width: 0;
+  height: 0;
+  color: transparent;
+}

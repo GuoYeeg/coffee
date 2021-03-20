@@ -1,0 +1,21 @@
+<!--pages/new/new.wxml-->
+<view class="banner">
+  <image src="{{bannerSrc}}"></image>
+</view>
+
+<view class="title">选择咖啡</view>
+
+<view class="list">
+  <view wx:for="{{listArr}}" bindtap="chooseItem" wx:key="*this" data-myindex="{{index}}" class="{{listNum==index?'active box':'box'}}">
+    <image src="{{item}}"></image>
+  </view>
+</view>
+
+<view class="title">选择口味</view>
+
+<view class="tastes">
+  <view  wx:for="{{tastesArr}}" wx:key="*this" class="{{tasteNum==index?' taste active':'taste'}}" bindtap="chooseTaste" data-myindex="{{index}}">
+    <view class="taste_title">{{item}}</view>
+    <view class="taste_text">-为爱制作-</view>
+  </view>
+</view>

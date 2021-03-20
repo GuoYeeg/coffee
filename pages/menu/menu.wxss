@@ -1,0 +1,79 @@
+/* pages/menu/menu.wxss */
+.swiper image{
+  width: 100vw;
+  height: calc(100vw*(520/1080));
+
+}
+swiper{
+  height: calc(100vw*(520/1080)) !important;
+  /* 给图片加上mode widthFix 保证其等比例缩放 */
+}
+
+.main{
+  width: 100%;
+  height: calc(100vh - calc(100vw*(520/1080)));
+  /* background-color: pink; */
+  overflow: hidden;
+}
+.main_l{
+  width: 25%;
+  height: 100%;
+  /* background-color: skyblue; */
+  border-right: 3rpx solid #ccc;
+  box-sizing: border-box;
+  float: left;
+}
+.main_l .scroll-view-item{
+  height: 80rpx;
+  border-bottom: 3rpx solid #ccc;
+  background-color: #fff;
+  text-align: center;
+  line-height: 80rpx;
+  position: relative;
+}
+.main_l .scroll-view-item::before{
+  content: "";
+  width: 8rpx;
+  height: 100%;
+  background-color: #6873BA;
+  position: absolute;
+  top: 0; left: 0;
+  display: none;
+}
+.main_l .scroll-view-item.active::before{
+  display: block;
+}
+.main_r{
+  height: 100%;
+  width: 75%;
+  float: right;
+  /* background-color: tan; */
+}
+.main_r .scroll-view-item{
+  width: 100%;
+  padding: 0 10rpx;
+  float: left;
+  margin-top: 20rpx;
+}
+
+.main_r .title{
+  width: 100%;
+  height: 70rpx;
+  line-height: 70rpx;
+}
+.main_r .content view{
+  width: 30%;
+  float: left;
+  margin-right: 15rpx;
+}
+.main_r image{
+  width: 100%;
+  display: block;
+}
+.main_r text{
+  display: block;
+  text-align: center;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+}

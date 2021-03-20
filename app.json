@@ -1,0 +1,42 @@
+{
+  "pages":[
+    "pages/contact/contact",
+    "pages/new/new",
+    "pages/menu/menu",
+    "pages/home/home",
+    "component/banner/banner"
+  ],
+  "window":{
+    "backgroundTextStyle":"light",
+    "navigationBarBackgroundColor": "#fff",
+    "navigationBarTitleText": "咖啡馆",
+    "navigationBarTextStyle":"black"
+  },
+  "tabBar": {
+    "color": "#000000",
+    "selectedColor": "#333999",
+    "list": [{
+      "pagePath": "pages/home/home",
+      "text": "首页",
+      "iconPath": "images/bar/bar1_1.png",
+      "selectedIconPath": "images/bar/bar1.png"
+    },{
+      "pagePath": "pages/menu/menu",
+      "text": "菜单",
+      "iconPath": "images/bar/bar2_2.png",
+      "selectedIconPath": "images/bar/bar2.png"
+    },{
+      "pagePath": "pages/new/new",
+      "text": "新品",
+      "iconPath": "images/bar/bar3_3.png",
+      "selectedIconPath": "images/bar/bar3.png"
+    },{
+      "pagePath": "pages/contact/contact",
+      "text": "小二",
+      "iconPath": "images/bar/bar4_4.png",
+      "selectedIconPath": "images/bar/bar4.png"
+    }]
+  },
+  "style": "v2",
+  "sitemapLocation": "sitemap.json"
+}

@@ -1,0 +1,13 @@
+/* pages/contact/contact.wxss */
+
+.title{
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 20rpx;
+  color: #666;
+}
+view{
+  padding-left: 20rpx;
+  padding-bottom: 10rpx;
+
+}

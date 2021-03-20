@@ -1,0 +1,6 @@
+{
+  "usingComponents": {
+    "my-banner":"../../component/banner/banner"
+  },
+  "navigationStyle": "custom" 
+}

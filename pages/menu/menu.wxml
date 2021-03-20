@@ -1,0 +1,23 @@
+<!--pages/menu/menu.wxml-->
+<my-banner bannerArr="{{bannerArr}}"></my-banner>
+
+<view class="main">
+  <scroll-view class="main_l" scroll-y="true"  scroll-into-view="{{leftId}}" >
+    <view wx:for="{{menuArr}}" wx:key="{{item.id}}" id="left{{item.id}}" class="{{leftNum===index?'scroll-view-item active':'scroll-view-item'}}" data-myindex="{{index}}" bindtap="itemFocus">
+      {{item.title}}
+    </view>
+  </scroll-view>  
+  <scroll-view class="main_r" scroll-y="true"  scroll-into-view="{{rightId}}" scroll-with-animation="true" bindscroll="changeLeft">
+    <view wx:for="{{menuArr}}"  wx:key="{{item.id}}" id="right{{item.id}}" class="scroll-view-item boxs">
+      <view class="title">{{item.title}}</view>
+      <view class="content">
+        <view wx:for="{{item.subArr}}" wx:key="*this" wx:for-item="subItem">
+          <image src="{{subItem.imgSrc}}" mode="widthFix"></image>
+          <text>{{subItem.imgDesc}}</text>
+        </view>
+      </view>
+    </view>
+  </scroll-view>
+</view>
+
+

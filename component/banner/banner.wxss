@@ -1,0 +1,29 @@
+/* component/banner/banner.wxss */
+.swiper image{
+  width: 100vw;
+  height: calc(100vw*(250/375));
+
+}
+swiper{
+  height: calc(100vw*(250/375));
+  /* 给图片加上mode widthFix 保证其等比例缩放 */
+}
+.dots .active{
+  background: rgb(40, 96, 201);
+}
+.dots view{
+  width: 20rpx;
+  height: 20rpx;
+  border-radius: 20rpx;
+  background: rgb(188, 201, 226);
+  float: left;
+  margin-right: 20rpx;
+}
+.swiper{
+  position: relative;
+}
+.dots{
+  position: absolute;
+  bottom: 20rpx;
+  right: 20rpx;
+}

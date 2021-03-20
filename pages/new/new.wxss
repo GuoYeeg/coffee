@@ -1,0 +1,60 @@
+/* pages/new/new.wxss */
+.banner{
+  height: 440rpx;
+  padding: 20rpx;
+  text-align: center;
+}
+.banner image{
+  width: 100%;
+  margin-left: 0;
+  height: 100%;
+}
+.title{
+  height: 60rpx;
+  line-height: 60rpx;
+  padding: 20rpx;
+  color: #666;
+}
+
+.list{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20rpx;
+}
+.box{
+  width: 30%;
+  height: 150rpx;
+  margin-bottom: 20rpx;
+  border: 4rpx solid transparent;
+}
+.box image{
+  width: 100%;
+  height: 100%;
+}
+
+
+.tastes{
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  padding: 20rpx;
+
+}
+.taste{
+  width: 30%;
+  height: 150rpx;
+  margin-bottom: 20rpx;
+  border: 4rpx solid #666;
+  border-radius: 6rpx;
+  text-align: center;
+  color: #666;
+}
+.taste_title{
+  padding-top: 35rpx;
+  font-size: 35rpx;
+}
+.active{
+  border: 4rpx solid orange;
+  border-radius: 6rpx;
+}
